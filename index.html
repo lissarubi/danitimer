@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temporizador</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="#" class="toggle-button">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </a>
+            <ul class="navlinks">
+                <a href="index.html"><li>Timer</li></a>
+                <a href="sobre.html"><li>Sobre</li></a>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <article class="timerbox">
+            <div class="timer" id="timer1">
+                <h2>Cabeçalho</h2>
+                <h3 class="askbox">
+                    Minutos <input type="number" name="min-timer1" id="min-timer1" class="number"><br>
+                    Segundos <input type="number" name="sec-timer1" id="sec-timer1" class="number"><br>
+                    <input type="button" value="Iniciar" class="timerbutton" id="startbutton1">
+                    <input type="button" value="Pausar" class="timerbutton" id="pausebutton1">
+                    <input type="button" value="Reiniciar" class="timerbutton" id="resetbutton1">
+                    <div id="timerbox1" class="timerresp"></div>
+                </h3>
+            </div>
+            <div class="timer" id="timer2">
+                <h2>Aula</h2>
+                <h3 class="askbox">
+                    Horas <input type="number" name="hour-timer2" id="hour-timer2" class="number"><br>
+                    Minutos <input type="number" name="min-timer2" id="min-timer2" class="number"><br>
+                    Segundos <input type="number" name="sec-timer2" id="sec-timer2" class="number"><br>
+                    <input type="button" value="Iniciar" class="timerbutton" id="startbutton2">
+                    <input type="button" value="Pausar" class="timerbutton pausebutton" id="pausebutton2">
+                    <input type="button" value="Reiniciar" class="timerbutton" id="resetbutton2">
+                    <div id="timerbox2" class="timerresp"></div>
+                </h3>
+            </div>
+        </article>
+    </main>
+    <script src="app.js"></script>
+</body>
+</html>
