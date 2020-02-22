@@ -32,7 +32,7 @@ stopButton1.addEventListener('click', function stopButton1(){
 })
 
 resetButton1.addEventListener('click', function(){
-    timerBox1.style.color = 'black'
+    timerBox1.style.color = 'whitesmoke'
     document.querySelector('input#min-timer1').value = ''
     document.querySelector('input#sec-timer1').value = ''
     timerBox1.innerHTML = 'Reiniciado!'
@@ -43,7 +43,7 @@ resetButton1.addEventListener('click', function(){
 })
 
 startButton1.addEventListener('click', function(){
-    timerBox1.style.color = 'black'
+    timerBox1.style.color = 'whitesmoke'
     startButton1.value = 'Iniciar'
     startButton1.style.display = 'none'
     stopButton1.style.display = 'initial'
@@ -114,7 +114,7 @@ stopButton2.addEventListener('click', function stopButton2(){
 })
 
 resetButton2.addEventListener('click', function(){
-    timerBox2.style.color = 'black'
+    timerBox2.style.color = 'whitesmoke'
     document.querySelector('input#hour-timer2').value = ''
     document.querySelector('input#min-timer2').value = ''
     document.querySelector('input#sec-timer2').value = ''
@@ -126,7 +126,7 @@ resetButton2.addEventListener('click', function(){
 })
 
 startButton2.addEventListener('click', function(){
-    timerBox2.style.color = 'black'
+    timerBox2.style.color = 'whitesmoke'
     startButton2.value = 'Iniciar'
     startButton2.style.display = 'none'
     stopButton2.style.display = 'initial'
