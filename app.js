@@ -1,3 +1,4 @@
+// inciando variáveis
 const startButton1 = document.querySelector('input#startbutton1')
 const startButton2 = document.querySelector('input#startbutton2')
 const timerBox1 = document.querySelector('div#timerbox1')
@@ -12,11 +13,13 @@ let booleanStop1 = false
 let booleanStop2 = false
 const toggleButton = document.querySelector('a.toggle-button')
 const navlinks = document.querySelector('ul.navlinks')
-
+ 
+// Hamburger Menu
 toggleButton.addEventListener('click', ()=>{
     navlinks.classList.toggle('active')
 })
 
+// Botão de parar 1
 stopButton1.addEventListener('click', function stopButton1(){
     stopButton1.value = 'Retomar'
     startButton1.style.display = 'initial'
@@ -31,6 +34,7 @@ stopButton1.addEventListener('click', function stopButton1(){
     }
 })
 
+// Botão de resetar 1
 resetButton1.addEventListener('click', function(){
     timerBox1.style.color = 'whitesmoke'
     document.querySelector('input#min-timer1').value = ''
@@ -42,6 +46,7 @@ resetButton1.addEventListener('click', function(){
     clearInterval(timer1)
 })
 
+// inciar contagem
 startButton1.addEventListener('click', function(){
     timerBox1.style.color = 'whitesmoke'
     startButton1.value = 'Iniciar'
@@ -62,7 +67,7 @@ startButton1.addEventListener('click', function(){
     timer1 = setInterval(function setTimer1() {
         let now = new Date()
         let distance = countdown - now
-        //calculation for minutes and seconds
+        //calculo de hora
         var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
         var seconds = Math.floor((distance % (1000 * 60)) / 1000);
         document.querySelector('input#min-timer1').value = minutes
@@ -98,7 +103,7 @@ startButton1.addEventListener('click', function(){
     
 })
 
-
+// botão de parar 2
 stopButton2.addEventListener('click', function stopButton2(){
     stopButton2.value = 'Retomar'
     startButton2.style.display = 'initial'
@@ -113,6 +118,7 @@ stopButton2.addEventListener('click', function stopButton2(){
     }
 })
 
+// botao de reniciar 2
 resetButton2.addEventListener('click', function(){
     timerBox2.style.color = 'whitesmoke'
     document.querySelector('input#hour-timer2').value = ''
@@ -125,6 +131,7 @@ resetButton2.addEventListener('click', function(){
     clearInterval(timer2)
 })
 
+// iniciar contagem
 startButton2.addEventListener('click', function(){
     timerBox2.style.color = 'whitesmoke'
     startButton2.value = 'Iniciar'
@@ -149,7 +156,7 @@ startButton2.addEventListener('click', function(){
     timer2 = setInterval(function setTimer2() {
         let nowclass = new Date()
         let distanceclass = countdownclass - nowclass
-        //calculation for minutesclass and seconds
+        //calculo de hora
         var hourclass = Math.floor((distanceclass % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60))
         var minutesclass = Math.floor((distanceclass % (1000 * 60 * 60)) / (1000 * 60))
         var secondsclass = Math.floor((distanceclass % (1000 * 60)) / 1000)
