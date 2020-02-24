@@ -51,12 +51,12 @@ nav{
     nav.active{
         display: none;
     }
-    li{
+    .li{
         margin-bottom: 8px;
         margin-right: 63vw;
     }
 }
-li{
+.li{
     display: inline-block;
     margin-left: 5vw;
     padding: 1.2vh;
@@ -66,7 +66,7 @@ li{
     font-weight: bold;
     color: whitesmoke;
 }
-li:hover{
+.li:hover{
     background-color: #800080;
 }
 ul{
