@@ -4,6 +4,12 @@
     margin: 0;
     font-family: 'Poppins', sans-serif;
 }
+*::selection {
+  background: #E65C5C;
+}
+*::-moz-selection {
+  background: #E65C5C;
+}
 body{
     background-color: #121212;
 }
